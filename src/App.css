@@ -49,17 +49,70 @@
     margin-left: 11%;
 }
 
-.ghe{
-    border: 3px solid orange;
-    width: 45px;
-    height: 35px;
-    font-size: 12px;
-    margin-left: 2%;
-    margin-bottom: 1%;
-    border-radius: 5px;
-}
+
 .list_item{
     margin-left: 15%;
     width: 70%;
     color: white;
+}
+.list_item2{
+    margin-left: 15%;
+    width: 71.5%;
+    color: white;
+}
+.hang_ghe{
+    padding-right: 0;
+    width: 100%;
+}
+
+
+/* cart  */
+.cart{
+    color: white;
+}
+.ghe{
+    border: 3px solid orange;
+    /* width: 45px;
+    height: 35px; */
+    font-size: 12px;
+    margin-left: 2%;
+    margin-bottom: 15%;
+    border-radius: 5px;
+}
+
+.ghe_da_dat{
+    border: 3px solid orange;
+    border-radius: 5px;
+    background-color: orange;
+    width: 45px;
+    height: 35px;
+    display: inline-block;
+}
+
+.ghe_dang_chon{
+    border: 3px solid orange;
+    border-radius: 5px;
+    background-color: green;
+    width: 45px;
+    height: 35px;
+    display: inline-block;
+}
+
+.ghe_chua_dat{
+    border: 3px solid orange;
+    border-radius: 5px;
+    background-color: white;
+    width: 45px;
+    height: 35px;
+    display: inline-block;
+}
+
+.table{
+    border: 1px solid white;
+    color: white;
+    text-align: center;
+}
+th{
+    border: 1px solid white;
+
 }

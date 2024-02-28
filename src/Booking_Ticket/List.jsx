@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
-import { connect } from 'react-redux'
 import Item from './Item'
+import { connect } from 'react-redux'
 
 class List extends Component {
     renderList = () => {
@@ -15,9 +15,24 @@ class List extends Component {
                 <h1>ĐẶT VÉ XEM PHIM CYPERLEARN.VN</h1>
                 <h4 style={{ color: "white" }}>MÀN HÌNH</h4>
                 <div className="screen"></div>
-                <div className='list_item'>
-                    {this.renderList()}
+
+                {/* hàng đầu */}
+                <div className='list_item  row '>
+                    <div className="col">{this.props.numberSheatArr.hang}</div>
+                    {this.props.numberSheatArr.danhSachGhe.map((item) => {
+                        return (
+                            <div style={{ color: "yellow",fontWeight:"bold" }} className='col'>{item.soGhe}</div>
+                        )
+                    })}
                 </div>
+                <br />
+
+                {/* các hàng sau */}
+                <div className='list_item2'>
+                    {this.renderList()}
+
+                </div>
+                    
             </div>
         )
     }
@@ -27,6 +42,7 @@ class List extends Component {
 let mapStateToProps = (state) => {
     return {
         listArr: state.data,
+        numberSheatArr: state.numberSheatArr
     }
 }
 export default connect(mapStateToProps)(List)
