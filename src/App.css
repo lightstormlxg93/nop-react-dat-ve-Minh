@@ -1,66 +1,65 @@
-/* css nav */
-.nav_shoe{
-    position: fixed;
-    top: 50%;
-    left: 0;
-    transform: translateY(-50%);
-    z-index: 1;
-}
-ul{
-    padding-left: 0;
-}
-li{
-    list-style-type: none;
-    background-color: rgba(220, 220, 220, 0.1);
-    padding-left: 20px;
-}
-a{
-    color: black;
-    font-size: 40px;
-    
-}
-li:hover a{
-    text-decoration: none;
-    color: blue;
-   
-  }
-li:hover{
-    background-color: aliceblue;
-    
+/* booking_ticket  */
+.background_img_ticket{
+    background-image: url(../public/img/bgmovie.jpg);
+    width: 100%;
+    background-size: cover;
+    height: 100vh;
+    }
+.background_color_ticket{
+    background-color: rgba(0, 0, 0, 0.514);
+    width: 100%;
+    height: 100vh;
+    margin: 0;
 }
 
-/* css modal  */
-.background_view_shoe{
+
+.booking_ticket{
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 1;
     width: 100%;
     height: 100vh;
-    background-color: rgba(0, 0, 0, 0.76);
-    display: none;
-}
-.view_Shoe{
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    z-index: 2;
-    background-color: white;
-    display: none;
-    
+    z-index: 1;
 }
 
-/* css item_Shoe  */
-.item_Background{
-    padding: 3px 3px;
-}
-.item_Shoe{
-    border: 1px solid rgba(0, 0, 255, 0.26);
-    padding: 2px 2px;
-    background-color: rgba(245, 222, 179, 0.247);
-}
-/* css cart  */
-.cart th,td{
+
+
+
+
+/* List  */
+
+.list h1{
+    color: rgb(238, 238, 54);
+    
     text-align: center;
+}
+.list h4{
+    padding-top: 15px;
+    text-align: center;
+}
+.screen{
+    border-bottom: 50px solid rgb(255, 159, 95);
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    height: 100;
+    width:80%;
+    filter: drop-shadow(4px 30px 20px rgba(255, 255, 255, 0.5));
+    font-size: 25px;
+    color: #fff;
+    margin-left: 11%;
+}
+
+.ghe{
+    border: 3px solid orange;
+    width: 45px;
+    height: 35px;
+    font-size: 12px;
+    margin-left: 2%;
+    margin-bottom: 1%;
+    border-radius: 5px;
+}
+.list_item{
+    margin-left: 15%;
+    width: 70%;
+    color: white;
 }

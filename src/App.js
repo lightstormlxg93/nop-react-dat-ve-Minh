@@ -1,11 +1,11 @@
 import logo from './logo.svg';
 import './App.css';
-import Ex_Shoe from './Ex_Shoe/Ex_Shoe';
+import BookingTicket from './Booking_Ticket/BookingTicket';
 
 function App() {
   return (
-    <Ex_Shoe/>
-  );
+    <BookingTicket/>
+  )
 }
 
 export default App;
