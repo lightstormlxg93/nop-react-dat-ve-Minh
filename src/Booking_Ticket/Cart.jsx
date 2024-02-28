@@ -11,9 +11,9 @@ class Cart extends Component {
         <h2 >DANH SÁCH GHẾ BẠN ĐÃ CHỌN</h2>
         <br /><br />
 
-        <div className="ghe_da_dat"></div> <span>Ghế đã đặt</span> <br />
-        <div className="ghe_dang_chon"></div> <span>Ghế đang chọn</span> <br />
-        <div className="ghe_chua_dat"></div> <span>Ghế chưa đặt</span> <br />
+        <div className="cart_ghe_da_dat"></div> <span>Ghế đã đặt</span> <br />
+        <div className="cart_ghe_dang_chon"></div> <span>Ghế đang chọn</span> <br />
+        <div className="cart_ghe_chua_dat"></div> <span>Ghế chưa đặt</span> <br />
         <br />
         <div className="cart_table">
           <table className=' table'>

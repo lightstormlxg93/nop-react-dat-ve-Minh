@@ -189,16 +189,20 @@ export let ticketReducer = (state = initialState, action) => {
   switch (action.type) {
     case "Add": {
         let cloneCart = [...state.cart]
+        
+        
         let ghe = action.payload;
         let index = cloneCart.findIndex((item) => { return ghe.soGhe==item.soGhe })
+        
         if (index == -1) {
-            ghe.daDat=true;
+            
             cloneCart.push(ghe);
-        } 
-        state.cart = cloneCart;
-        if(ghe.daDat){
+            
             
         }
+         
+        state.cart = cloneCart;
+        
         return { ...state }
     }
       default:
