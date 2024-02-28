@@ -18,8 +18,8 @@ class List extends Component {
 
                 {/* hàng đầu */}
                 <div className='list_item  row '>
-                    <div className="col">{this.props.numberSheatArr.hang}</div>
-                    {this.props.numberSheatArr.danhSachGhe.map((item) => {
+                    <div className="col">{this.props.fistChartArr.hang}</div>
+                    {this.props.fistChartArr.danhSachGhe.map((item) => {
                         return (
                             <div style={{ color: "yellow",fontWeight:"bold" }} className='col'>{item.soGhe}</div>
                         )
@@ -41,8 +41,8 @@ class List extends Component {
 
 let mapStateToProps = (state) => {
     return {
-        listArr: state.data,
-        numberSheatArr: state.numberSheatArr
+        listArr: state.listArr,
+        fistChartArr: state.fistChartArr
     }
 }
 export default connect(mapStateToProps)(List)

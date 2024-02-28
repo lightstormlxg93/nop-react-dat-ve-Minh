@@ -1,5 +1,5 @@
 let initialState = {
-  data: [
+    listArr: [
 
       {
           "hang": "A",
@@ -166,7 +166,7 @@ let initialState = {
       }
 
   ],
-  numberSheatArr: {
+  fistChartArr: {
       "hang": "",
       "danhSachGhe": [
           { "soGhe": "1", "gia": 0 },
@@ -187,7 +187,20 @@ let initialState = {
 }
 export let ticketReducer = (state = initialState, action) => {
   switch (action.type) {
-      
+    case "Add": {
+        let cloneCart = [...state.cart]
+        let ghe = action.payload;
+        let index = cloneCart.findIndex((item) => { return ghe.soGhe==item.soGhe })
+        if (index == -1) {
+            ghe.daDat=true;
+            cloneCart.push(ghe);
+        } 
+        state.cart = cloneCart;
+        if(ghe.daDat){
+            
+        }
+        return { ...state }
+    }
       default:
           return state;
   }

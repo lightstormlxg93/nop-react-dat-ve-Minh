@@ -111,8 +111,14 @@
     border: 1px solid white;
     color: white;
     text-align: center;
+    
 }
-th{
+.cart_table{
+    height: 50vh;
+    overflow: auto;
+
+}
+th,td{
     border: 1px solid white;
 
 }
