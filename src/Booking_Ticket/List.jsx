@@ -22,7 +22,7 @@ class List extends Component {
                     <div className="col">{this.props.fistChartArr.hang}</div>
                     {this.props.fistChartArr.danhSachGhe.map((item) => {
                         return (
-                            <div style={{ color: "yellow",fontWeight:"bold" }} className='col'>{item.soGhe}</div>
+                            <div style={{ color: "yellow",fontWeight:"bold", textAlign:"center" }} className='col'>{item.soGhe}</div>
                         )
                     })}
                 </div>
