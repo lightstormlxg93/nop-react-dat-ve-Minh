@@ -34,7 +34,10 @@ class Cart extends Component {
                     <td style={{color:"yellow", fontWeight:"bold"}}>{item.soGhe}</td>
                     <td style={{color:"yellow", fontWeight:"bold"}}>{item.gia}</td>
                     <td>
-                      <button className='btn-danger'>Xóa</button>
+                      <button className='btn-danger' onClick={() => {
+                                    this.props.handelDelete(item);
+                                    
+                                }}>Xóa</button>
                     </td>
                   </tr>
 
@@ -66,6 +69,18 @@ let mapStateToProps = (state) => {
     cart: state.cart
   }
 }
+let mapDispatchToProps = (dispatch) => {
+  return {
+      handelDelete: (ghe) => {
+          let action = {
+              type: "Delete",
+              payload: ghe
+          }
+          dispatch(action)
+      }
+  }
+}
 
 
-export default connect(mapStateToProps)(Cart)
+
+export default connect(mapStateToProps,mapDispatchToProps)(Cart)

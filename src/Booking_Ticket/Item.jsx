@@ -24,20 +24,18 @@ class Item extends Component {
                         <div style={{ color: "white" }} className='so_ghe col'>
                             <button
                                 
-                                
                                 onClick={() => {
                                     this.props.handelAddToCart(item);
-                                    
+                                    // this.props.handelChangeColor(item);
                                 }}
-                                className={item.daDat ? "ghe_da_dat" : "ghe_chua_dat"}
+                                className={item.daDat ? "ghe_da_dat" : "ghe_chua_dat" }
 
 
                             >
-                                {index + 1}
-                                <div className='button_background_color'> 
-                                {index + 1}
-                                </div>
-                            </button>
+                               <input type='checkbox'  id='my-checkbox'/> 
+                                {/* {index + 1} */}
+                            </button> 
+                            
 
                         </div>
                     )
@@ -58,7 +56,17 @@ let mapDispatchToProps = (dispatch) => {
                 payload: ghe
             }
             dispatch(action)
-        }
+        },
+        // handelChangeColor: (ghe) => {
+        //     let action = {
+        //         type: "Change",
+        //         payload: ghe
+        //     }
+        //     dispatch(action)
+        // }
+
+
+
     }
 }
 

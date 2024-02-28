@@ -12,6 +12,7 @@ class List extends Component {
     render() {
         return (
             <div className='list col-8'>
+                <br />
                 <h1>ĐẶT VÉ XEM PHIM CYPERLEARN.VN</h1>
                 <h4 style={{ color: "white" }}>MÀN HÌNH</h4>
                 <div className="screen"></div>
