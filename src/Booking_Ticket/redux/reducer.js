@@ -188,10 +188,11 @@ let initialState = {
 export let ticketReducer = (state = initialState, action) => {
     switch (action.type) {
         case "Add": {
+            
             let cloneCart = [...state.cart]
             let ghe = action.payload;
             let index = cloneCart.findIndex((item) => { return ghe.soGhe == item.soGhe })
-            if (index == -1) {
+            if (index == -1 & !ghe.daDat) {
                 cloneCart.push(ghe);
             }
 
@@ -201,10 +202,12 @@ export let ticketReducer = (state = initialState, action) => {
 
         case "Delete": {
             let cloneCart = [...state.cart]
-            let ghe=action.payload;
-            let index = cloneCart.findIndex((item) => { return ghe.soGhe == item.soGhe  })
+            let ghe = action.payload;
+            document.getElementById(ghe.soGhe).classList.remove("ghe_dang_dat");
+            
+            let index = cloneCart.findIndex((item) => { return ghe.soGhe == item.soGhe })
             cloneCart.splice(index, 1)
-            state.cart=cloneCart;
+            state.cart = cloneCart;
             return { ...state }
         }
 

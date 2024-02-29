@@ -7,7 +7,10 @@ import { connect } from 'react-redux'
 
 class Item extends Component {
     handelChangeColor=(ghe) => { 
-        document.getElementById(ghe.soGhe).classList.add("ghe_dang_dat");
+        if(!ghe.daDat){
+
+            document.getElementById(ghe.soGhe).classList.add("ghe_dang_dat");
+        }
      }
     render() {
         let numberSheatArr = this.props.sheatArr.danhSachGhe

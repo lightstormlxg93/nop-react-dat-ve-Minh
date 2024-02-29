@@ -127,27 +127,32 @@ th,td{
 /* item  */
 .ghe_da_dat{
     background-color: orange;
+    border: 1px solid orange;
     margin: 2px 0;
     padding: 0 ;
     width: 100%;
     height: 30px;
     
 }
+.ghe_dang_dat{
+    background-color: green;
+    border: 1px solid orange;
+    margin: 2px 0;
+    padding: 0 ;
+    width: 100%;
+    height: 30px;
+    
+}
+
 .ghe_chua_dat{
+    border: 1px solid orange;
     margin: 2px 0;
     padding: 0;
     width: 100%;
     height: 30px;
     /* position: absolute; */
 }
-.ghe_dang_dat{
-    background-color: green;
-    margin: 2px 0;
-    padding: 0 ;
-    width: 100%;
-    height: 30px;
-    
-}
+
 
 
 /* #my-checkbox{
