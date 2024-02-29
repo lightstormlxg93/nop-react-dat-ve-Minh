@@ -32,7 +32,7 @@ class Cart extends Component {
                 return (
                   <tr>
                     <td style={{color:"yellow", fontWeight:"bold"}}>{item.soGhe}</td>
-                    <td style={{color:"yellow", fontWeight:"bold"}}>{item.gia}</td>
+                    <td style={{color:"yellow", fontWeight:"bold"}}>{item.gia} đ</td>
                     <td>
                       <button className='btn-danger' onClick={() => {
                                     this.props.handelDelete(item);
@@ -51,7 +51,7 @@ class Cart extends Component {
               })}
               <tr>
                 <td style={{fontWeight:"bold"}}>Tổng Tiền</td>
-                <td style={{color:"yellow", fontWeight:"bold"}}>{tongTien}</td>
+                <td style={{color:"yellow", fontWeight:"bold"}}>{tongTien} đ</td>
                 <td></td>
               </tr>
             </tbody>
