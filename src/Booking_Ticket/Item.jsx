@@ -6,10 +6,9 @@ import { connect } from 'react-redux'
 
 
 class Item extends Component {
-    // handelChangeColor=() => { 
-    //     const element = document.querySelector(".ghe_chua_dat");
-    //     element.classList.replace("ghe_chua_dat", "ghe_da_dat");
-    //  }
+    handelChangeColor=(ghe) => { 
+        document.getElementById(ghe.soGhe).classList.add("ghe_dang_dat");
+     }
     render() {
         let numberSheatArr = this.props.sheatArr.danhSachGhe
         
@@ -26,14 +25,14 @@ class Item extends Component {
                                 
                                 onClick={() => {
                                     this.props.handelAddToCart(item);
-                                    // this.props.handelChangeColor(item);
+                                    this.handelChangeColor(item);
                                 }}
                                 className={item.daDat ? "ghe_da_dat" : "ghe_chua_dat" }
-
+                                id={item.soGhe}
 
                             >
-                               <input type='checkbox'  id='my-checkbox'/> 
-                                {/* {index + 1} */}
+                               {/* <input type='checkbox'  id='my-checkbox'/>  */}
+                                {index + 1}
                             </button> 
                             
 
